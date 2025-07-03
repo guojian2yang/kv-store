@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../muduo/lib/libmuduo_http.a CMakeFiles/muduo_http.dir/HttpServer.cc.o CMakeFiles/muduo_http.dir/HttpContext.cc.o
+/usr/bin/ranlib ../../../../muduo/lib/libmuduo_http.a

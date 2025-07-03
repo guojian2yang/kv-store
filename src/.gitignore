@@ -1,0 +1,28 @@
+# ========================
+# 构建相关产物（必忽略）
+# ========================
+/build/           # CMake 构建目录（src/build 或根目录下的 build）
+/bin/             # 可执行文件输出目录
+/lib/             # 库文件输出目录
+CMakeCache.txt    # CMake 缓存文件
+CMakeFiles/       # CMake 生成的中间文件
+cmake_install.cmake
+Makefile          # 自动生成的 Makefile
+*.a               # 静态库（如 muduo 编译生成的 .a 文件）
+*.so              # 动态库
+*.out             # 临时可执行文件
+
+# ========================
+# 日志与临时文件
+# ========================
+*.log             # 运行日志（如服务端生成的日志文件）
+*.tmp             # 临时文件
+
+# ========================
+# 系统与 IDE 自动生成文件
+# ========================
+.vscode/          # VS Code 配置（如扩展缓存、launch.json 等，若需保留配置可仅忽略特定文件）
+.idea/            # IntelliJ 系列 IDE 配置
+.DS_Store         # macOS 系统隐藏文件
+*.swp             # Vim 交换文件
+*.swo             # Vim 临时文件
