@@ -1,8 +1,8 @@
 muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/base/TimeZone.cc \
-  /home/guojian/share/kvstore/src/muduo/base/TimeZone.h \
-  /home/guojian/share/kvstore/src/muduo/base/copyable.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/TimeZone.cc \
+  /home/guojian/share/kv-store/src/muduo/base/TimeZone.h \
+  /home/guojian/share/kv-store/src/muduo/base/copyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -175,8 +175,8 @@ muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/auto_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_memory_defs.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/execution_defs.h \
-  /home/guojian/share/kvstore/src/muduo/base/noncopyable.h \
-  /home/guojian/share/kvstore/src/muduo/base/Date.h \
+  /home/guojian/share/kv-store/src/muduo/base/noncopyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Date.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algo.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/algorithmfwd.h \

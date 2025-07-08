@@ -1,8 +1,8 @@
 muduo/base/CMakeFiles/muduo_base.dir/Date.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/base/Date.cc \
-  /home/guojian/share/kvstore/src/muduo/base/Date.h \
-  /home/guojian/share/kvstore/src/muduo/base/copyable.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/Date.cc \
+  /home/guojian/share/kv-store/src/muduo/base/Date.h \
+  /home/guojian/share/kv-store/src/muduo/base/copyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

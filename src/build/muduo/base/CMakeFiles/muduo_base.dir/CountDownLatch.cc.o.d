@@ -1,10 +1,10 @@
 muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/base/CountDownLatch.cc \
-  /home/guojian/share/kvstore/src/muduo/base/CountDownLatch.h \
-  /home/guojian/share/kvstore/src/muduo/base/Condition.h \
-  /home/guojian/share/kvstore/src/muduo/base/Mutex.h \
-  /home/guojian/share/kvstore/src/muduo/base/CurrentThread.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/CountDownLatch.cc \
+  /home/guojian/share/kv-store/src/muduo/base/CountDownLatch.h \
+  /home/guojian/share/kv-store/src/muduo/base/Condition.h \
+  /home/guojian/share/kv-store/src/muduo/base/Mutex.h \
+  /home/guojian/share/kv-store/src/muduo/base/CurrentThread.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -146,4 +146,4 @@ muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/charconv.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.tcc \
   /usr/include/assert.h \
-  /home/guojian/share/kvstore/src/muduo/base/noncopyable.h
+  /home/guojian/share/kv-store/src/muduo/base/noncopyable.h

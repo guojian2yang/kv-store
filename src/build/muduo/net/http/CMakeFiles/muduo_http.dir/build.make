@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guojian/share/kvstore/src
+CMAKE_SOURCE_DIR = /home/guojian/share/kv-store/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guojian/share/kvstore/src/build
+CMAKE_BINARY_DIR = /home/guojian/share/kv-store/src/build
 
 # Include any dependencies generated for this target.
 include muduo/net/http/CMakeFiles/muduo_http.dir/depend.make
@@ -72,30 +72,30 @@ include muduo/net/http/CMakeFiles/muduo_http.dir/flags.make
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o: muduo/net/http/CMakeFiles/muduo_http.dir/flags.make
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o: ../muduo/net/http/HttpServer.cc
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o: muduo/net/http/CMakeFiles/muduo_http.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guojian/share/kvstore/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o"
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o -MF CMakeFiles/muduo_http.dir/HttpServer.cc.o.d -o CMakeFiles/muduo_http.dir/HttpServer.cc.o -c /home/guojian/share/kvstore/src/muduo/net/http/HttpServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guojian/share/kv-store/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o"
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o -MF CMakeFiles/muduo_http.dir/HttpServer.cc.o.d -o CMakeFiles/muduo_http.dir/HttpServer.cc.o -c /home/guojian/share/kv-store/src/muduo/net/http/HttpServer.cc
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_http.dir/HttpServer.cc.i"
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guojian/share/kvstore/src/muduo/net/http/HttpServer.cc > CMakeFiles/muduo_http.dir/HttpServer.cc.i
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guojian/share/kv-store/src/muduo/net/http/HttpServer.cc > CMakeFiles/muduo_http.dir/HttpServer.cc.i
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_http.dir/HttpServer.cc.s"
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guojian/share/kvstore/src/muduo/net/http/HttpServer.cc -o CMakeFiles/muduo_http.dir/HttpServer.cc.s
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guojian/share/kv-store/src/muduo/net/http/HttpServer.cc -o CMakeFiles/muduo_http.dir/HttpServer.cc.s
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o: muduo/net/http/CMakeFiles/muduo_http.dir/flags.make
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o: ../muduo/net/http/HttpContext.cc
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o: muduo/net/http/CMakeFiles/muduo_http.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guojian/share/kvstore/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o"
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o -MF CMakeFiles/muduo_http.dir/HttpContext.cc.o.d -o CMakeFiles/muduo_http.dir/HttpContext.cc.o -c /home/guojian/share/kvstore/src/muduo/net/http/HttpContext.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guojian/share/kv-store/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o"
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o -MF CMakeFiles/muduo_http.dir/HttpContext.cc.o.d -o CMakeFiles/muduo_http.dir/HttpContext.cc.o -c /home/guojian/share/kv-store/src/muduo/net/http/HttpContext.cc
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_http.dir/HttpContext.cc.i"
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guojian/share/kvstore/src/muduo/net/http/HttpContext.cc > CMakeFiles/muduo_http.dir/HttpContext.cc.i
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guojian/share/kv-store/src/muduo/net/http/HttpContext.cc > CMakeFiles/muduo_http.dir/HttpContext.cc.i
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_http.dir/HttpContext.cc.s"
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guojian/share/kvstore/src/muduo/net/http/HttpContext.cc -o CMakeFiles/muduo_http.dir/HttpContext.cc.s
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guojian/share/kv-store/src/muduo/net/http/HttpContext.cc -o CMakeFiles/muduo_http.dir/HttpContext.cc.s
 
 # Object files for target muduo_http
 muduo_http_OBJECTS = \
@@ -109,19 +109,19 @@ muduo_http_EXTERNAL_OBJECTS =
 ../muduo/lib/libmuduo_http.a: muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o
 ../muduo/lib/libmuduo_http.a: muduo/net/http/CMakeFiles/muduo_http.dir/build.make
 ../muduo/lib/libmuduo_http.a: muduo/net/http/CMakeFiles/muduo_http.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guojian/share/kvstore/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../../muduo/lib/libmuduo_http.a"
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean_target.cmake
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_http.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guojian/share/kv-store/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../../muduo/lib/libmuduo_http.a"
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean_target.cmake
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_http.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 muduo/net/http/CMakeFiles/muduo_http.dir/build: ../muduo/lib/libmuduo_http.a
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/build
 
 muduo/net/http/CMakeFiles/muduo_http.dir/clean:
-	cd /home/guojian/share/kvstore/src/build/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean.cmake
+	cd /home/guojian/share/kv-store/src/build/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean.cmake
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/clean
 
 muduo/net/http/CMakeFiles/muduo_http.dir/depend:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guojian/share/kvstore/src /home/guojian/share/kvstore/src/muduo/net/http /home/guojian/share/kvstore/src/build /home/guojian/share/kvstore/src/build/muduo/net/http /home/guojian/share/kvstore/src/build/muduo/net/http/CMakeFiles/muduo_http.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guojian/share/kv-store/src /home/guojian/share/kv-store/src/muduo/net/http /home/guojian/share/kv-store/src/build /home/guojian/share/kv-store/src/build/muduo/net/http /home/guojian/share/kv-store/src/build/muduo/net/http/CMakeFiles/muduo_http.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/depend
 

@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include <mutex>
 #include <list>
+#include <iostream>
 #include <chrono>
 #include <fstream>
 #include <sstream>
@@ -9,7 +10,8 @@
 #include <thread>
 #include <functional>
 #include <condition_variable>
-using namespace std;
+
+using std::string;
 
 
 struct GetResult {
@@ -42,7 +44,7 @@ public:
     }
 
     GetResult get(const string& key) {
-        lock_guard<mutex> lock(mutex_);
+        std::lock_guard<std::mutex> lock(mutex_);
         GetResult result;
         auto it = store_.find(key);
         if (it == store_.end()) {
@@ -50,7 +52,7 @@ public:
             return result;
         }
 
-        auto now = chrono::system_clock::now();
+        auto now = std::chrono::system_clock::now();
         if (now > it->second.expire_time) {
             // 键存在但已过期，删除并标记状态
             access_order_.erase(it->second.it);
@@ -72,12 +74,14 @@ public:
     }
 
     // 同步设置 key 并指定过期时间
-    SetResult set(const string& key, const string& value, chrono::seconds ttl = chrono::seconds(0)) {
-        lock_guard<mutex> lock(mutex_);
+    SetResult set(const std::string& key, const std::string& value, std::chrono::seconds ttl = std::chrono::seconds(60)) {
+        std::cout << "set key: " << key << " value: " << value << " ttl: " << ttl.count() << std::endl;
+        std::lock_guard<std::mutex> lock(mutex_);
+        std::cout << "set key1: " << key << " value: " << value << " ttl: " << ttl.count() << std::endl;
         SetResult result;
-        auto expire_time = chrono::system_clock::now() + ttl;
+        auto expire_time = std::chrono::system_clock::now() + ttl;
         if (ttl.count() == 0) {
-            expire_time = chrono::system_clock::time_point::max(); // 无过期时间
+            expire_time = std::chrono::system_clock::time_point::max(); // 无过期时间
         }
 
         // 检查是否覆盖已有键
@@ -107,10 +111,10 @@ public:
     }
 
     // 异步设置 key 并指定过期时间
-    void asyncSet(const string& key, const string& value, chrono::seconds ttl, 
-                  function<void(SetResult)> callback = nullptr) {
+    void asyncSet(const string& key, const string& value, std::chrono::seconds ttl, 
+                  std::function<void(SetResult)> callback = nullptr) {
         {
-            lock_guard<mutex> lock(task_mutex_);
+            std::lock_guard<std::mutex> lock(task_mutex_);
             task_queue_.emplace([this, key, value, ttl, callback]() {
                 SetResult result = set(key, value, ttl); // 调用同步 set 获取结果
                 if (callback) {

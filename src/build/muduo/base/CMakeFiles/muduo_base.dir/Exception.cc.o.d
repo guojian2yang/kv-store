@@ -1,7 +1,7 @@
 muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/base/Exception.cc \
-  /home/guojian/share/kvstore/src/muduo/base/Exception.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/Exception.cc \
+  /home/guojian/share/kv-store/src/muduo/base/Exception.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -149,4 +149,4 @@ muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o: \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/typeinfo \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/nested_exception.h \
-  /home/guojian/share/kvstore/src/muduo/base/CurrentThread.h
+  /home/guojian/share/kv-store/src/muduo/base/CurrentThread.h

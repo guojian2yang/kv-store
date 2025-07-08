@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/guojian/share/kvstore/src
+CXX_INCLUDES = -I/home/guojian/share/kv-store/src
 
 CXX_FLAGS = -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++17 -Wno-null-dereference -Wno-sign-conversion -Wno-unused-local-typedef -Wthread-safety -O0 -g   -w
 

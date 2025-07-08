@@ -1,5 +1,5 @@
 kvs-client/CMakeFiles/kvs_client.dir/c++-kvstore.cc.o: \
-  /home/guojian/share/kvstore/src/kvs-client/c++-kvstore.cc \
+  /home/guojian/share/kv-store/src/kvs-client/c++-kvstore.cc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

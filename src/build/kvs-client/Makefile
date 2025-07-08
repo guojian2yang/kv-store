@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guojian/share/kvstore/src
+CMAKE_SOURCE_DIR = /home/guojian/share/kv-store/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guojian/share/kvstore/src/build
+CMAKE_BINARY_DIR = /home/guojian/share/kv-store/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles /home/guojian/share/kvstore/src/build/kvs-client//CMakeFiles/progress.marks
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles /home/guojian/share/kv-store/src/build/kvs-client//CMakeFiles/progress.marks
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/clean
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kvs-client/CMakeFiles/kvs_client.dir/rule:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/CMakeFiles/kvs_client.dir/rule
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-client/CMakeFiles/kvs_client.dir/rule
 .PHONY : kvs-client/CMakeFiles/kvs_client.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ kvs_client: kvs-client/CMakeFiles/kvs_client.dir/rule
 
 # fast build rule for target.
 kvs_client/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/build
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/build
 .PHONY : kvs_client/fast
 
 c++-kvstore.o: c++-kvstore.cc.o
@@ -190,7 +190,7 @@ c++-kvstore.o: c++-kvstore.cc.o
 
 # target to build an object file
 c++-kvstore.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/c++-kvstore.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/c++-kvstore.cc.o
 .PHONY : c++-kvstore.cc.o
 
 c++-kvstore.i: c++-kvstore.cc.i
@@ -198,7 +198,7 @@ c++-kvstore.i: c++-kvstore.cc.i
 
 # target to preprocess a source file
 c++-kvstore.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/c++-kvstore.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/c++-kvstore.cc.i
 .PHONY : c++-kvstore.cc.i
 
 c++-kvstore.s: c++-kvstore.cc.s
@@ -206,7 +206,7 @@ c++-kvstore.s: c++-kvstore.cc.s
 
 # target to generate assembly for a file
 c++-kvstore.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/c++-kvstore.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-client/CMakeFiles/kvs_client.dir/build.make kvs-client/CMakeFiles/kvs_client.dir/c++-kvstore.cc.s
 .PHONY : c++-kvstore.cc.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

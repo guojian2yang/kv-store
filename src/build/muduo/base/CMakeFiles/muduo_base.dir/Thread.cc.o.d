@@ -1,8 +1,8 @@
 muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/base/Thread.cc \
-  /home/guojian/share/kvstore/src/muduo/base/Thread.h \
-  /home/guojian/share/kvstore/src/muduo/base/Atomic.h \
-  /home/guojian/share/kvstore/src/muduo/base/noncopyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Thread.cc \
+  /home/guojian/share/kv-store/src/muduo/base/Thread.h \
+  /home/guojian/share/kv-store/src/muduo/base/Atomic.h \
+  /home/guojian/share/kv-store/src/muduo/base/noncopyable.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -19,11 +19,11 @@ muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.o: \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /home/guojian/share/kvstore/src/muduo/base/CountDownLatch.h \
-  /home/guojian/share/kvstore/src/muduo/base/Condition.h \
-  /home/guojian/share/kvstore/src/muduo/base/Mutex.h \
-  /home/guojian/share/kvstore/src/muduo/base/CurrentThread.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/CountDownLatch.h \
+  /home/guojian/share/kv-store/src/muduo/base/Condition.h \
+  /home/guojian/share/kv-store/src/muduo/base/Mutex.h \
+  /home/guojian/share/kv-store/src/muduo/base/CurrentThread.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/include/string.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
@@ -197,12 +197,12 @@ muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/auto_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_memory_defs.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/execution_defs.h \
-  /home/guojian/share/kvstore/src/muduo/base/Exception.h \
-  /home/guojian/share/kvstore/src/muduo/base/Logging.h \
-  /home/guojian/share/kvstore/src/muduo/base/LogStream.h \
-  /home/guojian/share/kvstore/src/muduo/base/StringPiece.h \
-  /home/guojian/share/kvstore/src/muduo/base/Timestamp.h \
-  /home/guojian/share/kvstore/src/muduo/base/copyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Exception.h \
+  /home/guojian/share/kv-store/src/muduo/base/Logging.h \
+  /home/guojian/share/kv-store/src/muduo/base/LogStream.h \
+  /home/guojian/share/kv-store/src/muduo/base/StringPiece.h \
+  /home/guojian/share/kv-store/src/muduo/base/Timestamp.h \
+  /home/guojian/share/kv-store/src/muduo/base/copyable.h \
   /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \

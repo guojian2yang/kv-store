@@ -1,6 +1,6 @@
 muduo/net/CMakeFiles/muduo_net.dir/SocketsOps.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/net/SocketsOps.cc \
-  /home/guojian/share/kvstore/src/muduo/net/SocketsOps.h \
+  /home/guojian/share/kv-store/src/muduo/net/SocketsOps.cc \
+  /home/guojian/share/kv-store/src/muduo/net/SocketsOps.h \
   /usr/include/arpa/inet.h /usr/include/features.h \
   /usr/include/features-time64.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -53,10 +53,10 @@ muduo/net/CMakeFiles/muduo_net.dir/SocketsOps.cc.o: \
   /usr/include/asm-generic/sockios.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/in.h \
-  /home/guojian/share/kvstore/src/muduo/base/Logging.h \
-  /home/guojian/share/kvstore/src/muduo/base/LogStream.h \
-  /home/guojian/share/kvstore/src/muduo/base/noncopyable.h \
-  /home/guojian/share/kvstore/src/muduo/base/StringPiece.h \
+  /home/guojian/share/kv-store/src/muduo/base/Logging.h \
+  /home/guojian/share/kv-store/src/muduo/base/LogStream.h \
+  /home/guojian/share/kv-store/src/muduo/base/noncopyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/StringPiece.h \
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
@@ -80,7 +80,7 @@ muduo/net/CMakeFiles/muduo_net.dir/SocketsOps.cc.o: \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string \
@@ -165,10 +165,10 @@ muduo/net/CMakeFiles/muduo_net.dir/SocketsOps.cc.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/charconv.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.tcc \
   /usr/include/assert.h \
-  /home/guojian/share/kvstore/src/muduo/base/Timestamp.h \
-  /home/guojian/share/kvstore/src/muduo/base/copyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Timestamp.h \
+  /home/guojian/share/kv-store/src/muduo/base/copyable.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
-  /home/guojian/share/kvstore/src/muduo/net/Endian.h \
+  /home/guojian/share/kv-store/src/muduo/net/Endian.h \
   /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \

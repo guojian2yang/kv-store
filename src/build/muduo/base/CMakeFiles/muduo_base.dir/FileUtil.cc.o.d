@@ -1,8 +1,8 @@
 muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/base/FileUtil.cc \
-  /home/guojian/share/kvstore/src/muduo/base/FileUtil.h \
-  /home/guojian/share/kvstore/src/muduo/base/noncopyable.h \
-  /home/guojian/share/kvstore/src/muduo/base/StringPiece.h \
+  /home/guojian/share/kv-store/src/muduo/base/FileUtil.cc \
+  /home/guojian/share/kv-store/src/muduo/base/FileUtil.h \
+  /home/guojian/share/kv-store/src/muduo/base/noncopyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/StringPiece.h \
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h /usr/include/features-time64.h \
@@ -34,7 +34,7 @@ muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o: \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h \
   /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -144,10 +144,10 @@ muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/charconv.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.tcc \
   /usr/include/assert.h \
-  /home/guojian/share/kvstore/src/muduo/base/Logging.h \
-  /home/guojian/share/kvstore/src/muduo/base/LogStream.h \
-  /home/guojian/share/kvstore/src/muduo/base/Timestamp.h \
-  /home/guojian/share/kvstore/src/muduo/base/copyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Logging.h \
+  /home/guojian/share/kv-store/src/muduo/base/LogStream.h \
+  /home/guojian/share/kv-store/src/muduo/base/Timestamp.h \
+  /home/guojian/share/kv-store/src/muduo/base/copyable.h \
   /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \

@@ -640,8 +640,8 @@ kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.o: ../kvs-serve
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -658,9 +658,10 @@ kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.o: ../kvs-serve
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
   /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
@@ -693,7 +694,6 @@ kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.o: ../kvs-serve
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/iostream \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -1025,8 +1025,8 @@ kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.o: ../kvs-server/kvsto
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
-  /usr/include/c++/11/fstream \
-  /usr/include/c++/11/istream \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -1043,9 +1043,10 @@ kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.o: ../kvs-server/kvsto
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/ostream \
   /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

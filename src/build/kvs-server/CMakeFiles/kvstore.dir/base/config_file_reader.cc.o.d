@@ -1,7 +1,7 @@
 kvs-server/CMakeFiles/kvstore.dir/base/config_file_reader.cc.o: \
-  /home/guojian/share/kvstore/src/kvs-server/base/config_file_reader.cc \
-  /home/guojian/share/kvstore/src/kvs-server/base/config_file_reader.h \
-  /home/guojian/share/kvstore/src/kvs-server/base/util.h \
+  /home/guojian/share/kv-store/src/kvs-server/base/config_file_reader.cc \
+  /home/guojian/share/kv-store/src/kvs-server/base/config_file_reader.h \
+  /home/guojian/share/kv-store/src/kvs-server/base/util.h \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h /usr/include/features-time64.h \

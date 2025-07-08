@@ -1,6 +1,6 @@
 kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.o: \
-  /home/guojian/share/kvstore/src/kvs-server/mysql/db_pool.cc \
-  /home/guojian/share/kvstore/src/kvs-server/mysql/db_pool.h \
+  /home/guojian/share/kv-store/src/kvs-server/mysql/db_pool.cc \
+  /home/guojian/share/kv-store/src/kvs-server/mysql/db_pool.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/condition_variable \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/chrono \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ratio \
@@ -213,17 +213,17 @@ kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.o: \
   /usr/include/mysql/mysql_version.h /usr/include/mysql/mysql_time.h \
   /usr/include/mysql/errmsg.h /usr/include/string.h \
   /usr/include/strings.h \
-  /home/guojian/share/kvstore/src/muduo/base/Logging.h \
-  /home/guojian/share/kvstore/src/muduo/base/LogStream.h \
-  /home/guojian/share/kvstore/src/muduo/base/noncopyable.h \
-  /home/guojian/share/kvstore/src/muduo/base/StringPiece.h \
-  /home/guojian/share/kvstore/src/muduo/base/Types.h \
+  /home/guojian/share/kv-store/src/muduo/base/Logging.h \
+  /home/guojian/share/kv-store/src/muduo/base/LogStream.h \
+  /home/guojian/share/kv-store/src/muduo/base/noncopyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/StringPiece.h \
+  /home/guojian/share/kv-store/src/muduo/base/Types.h \
   /usr/include/assert.h \
-  /home/guojian/share/kvstore/src/muduo/base/Timestamp.h \
-  /home/guojian/share/kvstore/src/muduo/base/copyable.h \
+  /home/guojian/share/kv-store/src/muduo/base/Timestamp.h \
+  /home/guojian/share/kv-store/src/muduo/base/copyable.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
-  /home/guojian/share/kvstore/src/kvs-server/base/config_file_reader.h \
-  /home/guojian/share/kvstore/src/kvs-server/base/util.h \
+  /home/guojian/share/kv-store/src/kvs-server/base/config_file_reader.h \
+  /home/guojian/share/kv-store/src/kvs-server/base/util.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \

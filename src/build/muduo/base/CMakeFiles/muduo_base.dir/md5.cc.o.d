@@ -1,6 +1,6 @@
 muduo/base/CMakeFiles/muduo_base.dir/md5.cc.o: \
-  /home/guojian/share/kvstore/src/muduo/base/md5.cc \
-  /home/guojian/share/kvstore/src/muduo/base/md5.h \
+  /home/guojian/share/kv-store/src/muduo/base/md5.cc \
+  /home/guojian/share/kv-store/src/muduo/base/md5.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

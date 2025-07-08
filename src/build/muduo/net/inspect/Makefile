@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guojian/share/kvstore/src
+CMAKE_SOURCE_DIR = /home/guojian/share/kv-store/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guojian/share/kvstore/src/build
+CMAKE_BINARY_DIR = /home/guojian/share/kv-store/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles /home/guojian/share/kvstore/src/build/muduo/net/inspect//CMakeFiles/progress.marks
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles /home/guojian/share/kv-store/src/build/muduo/net/inspect//CMakeFiles/progress.marks
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/clean
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
 .PHONY : muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ muduo_inspect: muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
 
 # fast build rule for target.
 muduo_inspect/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build
 .PHONY : muduo_inspect/fast
 
 Inspector.o: Inspector.cc.o
@@ -190,7 +190,7 @@ Inspector.o: Inspector.cc.o
 
 # target to build an object file
 Inspector.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.o
 .PHONY : Inspector.cc.o
 
 Inspector.i: Inspector.cc.i
@@ -198,7 +198,7 @@ Inspector.i: Inspector.cc.i
 
 # target to preprocess a source file
 Inspector.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.i
 .PHONY : Inspector.cc.i
 
 Inspector.s: Inspector.cc.s
@@ -206,7 +206,7 @@ Inspector.s: Inspector.cc.s
 
 # target to generate assembly for a file
 Inspector.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.s
 .PHONY : Inspector.cc.s
 
 PerformanceInspector.o: PerformanceInspector.cc.o
@@ -214,7 +214,7 @@ PerformanceInspector.o: PerformanceInspector.cc.o
 
 # target to build an object file
 PerformanceInspector.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.o
 .PHONY : PerformanceInspector.cc.o
 
 PerformanceInspector.i: PerformanceInspector.cc.i
@@ -222,7 +222,7 @@ PerformanceInspector.i: PerformanceInspector.cc.i
 
 # target to preprocess a source file
 PerformanceInspector.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.i
 .PHONY : PerformanceInspector.cc.i
 
 PerformanceInspector.s: PerformanceInspector.cc.s
@@ -230,7 +230,7 @@ PerformanceInspector.s: PerformanceInspector.cc.s
 
 # target to generate assembly for a file
 PerformanceInspector.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.s
 .PHONY : PerformanceInspector.cc.s
 
 ProcessInspector.o: ProcessInspector.cc.o
@@ -238,7 +238,7 @@ ProcessInspector.o: ProcessInspector.cc.o
 
 # target to build an object file
 ProcessInspector.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.o
 .PHONY : ProcessInspector.cc.o
 
 ProcessInspector.i: ProcessInspector.cc.i
@@ -246,7 +246,7 @@ ProcessInspector.i: ProcessInspector.cc.i
 
 # target to preprocess a source file
 ProcessInspector.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.i
 .PHONY : ProcessInspector.cc.i
 
 ProcessInspector.s: ProcessInspector.cc.s
@@ -254,7 +254,7 @@ ProcessInspector.s: ProcessInspector.cc.s
 
 # target to generate assembly for a file
 ProcessInspector.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.s
 .PHONY : ProcessInspector.cc.s
 
 SystemInspector.o: SystemInspector.cc.o
@@ -262,7 +262,7 @@ SystemInspector.o: SystemInspector.cc.o
 
 # target to build an object file
 SystemInspector.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.o
 .PHONY : SystemInspector.cc.o
 
 SystemInspector.i: SystemInspector.cc.i
@@ -270,7 +270,7 @@ SystemInspector.i: SystemInspector.cc.i
 
 # target to preprocess a source file
 SystemInspector.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.i
 .PHONY : SystemInspector.cc.i
 
 SystemInspector.s: SystemInspector.cc.s
@@ -278,7 +278,7 @@ SystemInspector.s: SystemInspector.cc.s
 
 # target to generate assembly for a file
 SystemInspector.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.s
 .PHONY : SystemInspector.cc.s
 
 # Help Target
@@ -318,6 +318,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

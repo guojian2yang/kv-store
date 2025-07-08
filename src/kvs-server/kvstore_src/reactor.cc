@@ -9,6 +9,11 @@
 #include <functional>
 #include <vector>
 #include <iostream>
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <thread>
+#include <atomic>
 #include "command_handler.h" 
 
 // 假设的 conn 结构体定义
@@ -33,12 +38,65 @@ int timeSubMs(const timeval& tv1, const timeval& tv2) {
     return (tv1.tv_sec - tv2.tv_sec) * 1000 + (tv1.tv_usec - tv2.tv_usec) / 1000;
 }
 
+
+// 线程池类
+class ThreadPool {
+public:
+    ThreadPool(size_t threads) : stop(false) {
+        for (size_t i = 0; i < threads; ++i) {
+            workers.emplace_back([this] {
+                while (true) {
+                    std::function<void()> task;
+                    {
+                        std::unique_lock<std::mutex> lock(this->queue_mutex);
+                        this->condition.wait(lock, [this] { return this->stop || !this->tasks.empty(); });
+                        if (this->stop && this->tasks.empty())
+                            return;
+                        task = std::move(this->tasks.front());
+                        this->tasks.pop();
+                    }
+                    task();
+                }
+            });
+        }
+    }
+
+    template<class F>
+    void enqueue(F&& f) {
+        {
+            std::unique_lock<std::mutex> lock(queue_mutex);
+            tasks.emplace(std::forward<F>(f));
+        }
+        condition.notify_one();
+    }
+
+    ~ThreadPool() {
+        {
+            std::unique_lock<std::mutex> lock(queue_mutex);
+            stop = true;
+        }
+        condition.notify_all();
+        for (std::thread &worker : workers) {
+            worker.join();
+        }
+    }
+
+private:
+    std::vector<std::thread> workers;
+    std::queue<std::function<void()>> tasks;
+    std::mutex queue_mutex;
+    std::condition_variable condition;
+    std::atomic<bool> stop;
+};
+
 class ReactorServer {
 private:
     int epfd;
     timeval begin;
     std::vector<Conn> conn_list;
     std::function<int(char*, int, char*)> kvs_handler;
+    ThreadPool thread_pool;
+    std::mutex epoll_mutex;
 
     // 设置事件
     int setEvent(int fd, int event, bool flag) {
@@ -112,15 +170,19 @@ private:
         conn_list[fd].rlength = count;
 
         if (kvs_handler) {
-            // 将接收到的数据传递给 commandHandler 处理
-            conn_list[fd].wlength = kvs_handler(
-                conn_list[fd].rbuffer,  // 输入数据
-                conn_list[fd].rlength,  // 输入数据长度
-                conn_list[fd].wbuffer   // 输出响应缓冲区
-            );
+            // 将业务处理任务放入线程池
+            thread_pool.enqueue([this, fd] {
+                int wlength = kvs_handler(
+                    conn_list[fd].rbuffer,  // 输入数据
+                    conn_list[fd].rlength,  // 输入数据长度
+                    conn_list[fd].wbuffer   // 输出响应缓冲区
+                );
+                conn_list[fd].wlength = wlength;
+                // 唤醒主线程处理写事件
+                std::lock_guard<std::mutex> lock(epoll_mutex);
+                setEvent(fd, EPOLLOUT, false);
+            });
         }
-
-        setEvent(fd, EPOLLOUT, false);
         return count;
     }
 
@@ -153,7 +215,7 @@ private:
     }
 
 public:
-    ReactorServer() : epfd(0), conn_list(CONNECTION_SIZE) {}
+    ReactorServer(size_t thread_num = 4) : epfd(0), conn_list(CONNECTION_SIZE), thread_pool(thread_num) {}
 
     // 启动反应堆
     void start(unsigned short port, std::function<int(char*, int, char*)> handler) {

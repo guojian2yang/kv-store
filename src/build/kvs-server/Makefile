@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guojian/share/kvstore/src
+CMAKE_SOURCE_DIR = /home/guojian/share/kv-store/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guojian/share/kvstore/src/build
+CMAKE_BINARY_DIR = /home/guojian/share/kv-store/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles /home/guojian/share/kvstore/src/build/kvs-server//CMakeFiles/progress.marks
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles /home/guojian/share/kv-store/src/build/kvs-server//CMakeFiles/progress.marks
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/clean
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kvs-server/CMakeFiles/kvstore.dir/rule:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/CMakeFiles/kvstore.dir/rule
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kvs-server/CMakeFiles/kvstore.dir/rule
 .PHONY : kvs-server/CMakeFiles/kvstore.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ kvstore: kvs-server/CMakeFiles/kvstore.dir/rule
 
 # fast build rule for target.
 kvstore/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/build
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/build
 .PHONY : kvstore/fast
 
 base/config_file_reader.o: base/config_file_reader.cc.o
@@ -190,7 +190,7 @@ base/config_file_reader.o: base/config_file_reader.cc.o
 
 # target to build an object file
 base/config_file_reader.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/config_file_reader.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/config_file_reader.cc.o
 .PHONY : base/config_file_reader.cc.o
 
 base/config_file_reader.i: base/config_file_reader.cc.i
@@ -198,7 +198,7 @@ base/config_file_reader.i: base/config_file_reader.cc.i
 
 # target to preprocess a source file
 base/config_file_reader.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/config_file_reader.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/config_file_reader.cc.i
 .PHONY : base/config_file_reader.cc.i
 
 base/config_file_reader.s: base/config_file_reader.cc.s
@@ -206,7 +206,7 @@ base/config_file_reader.s: base/config_file_reader.cc.s
 
 # target to generate assembly for a file
 base/config_file_reader.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/config_file_reader.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/config_file_reader.cc.s
 .PHONY : base/config_file_reader.cc.s
 
 base/util.o: base/util.cc.o
@@ -214,7 +214,7 @@ base/util.o: base/util.cc.o
 
 # target to build an object file
 base/util.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/util.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/util.cc.o
 .PHONY : base/util.cc.o
 
 base/util.i: base/util.cc.i
@@ -222,7 +222,7 @@ base/util.i: base/util.cc.i
 
 # target to preprocess a source file
 base/util.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/util.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/util.cc.i
 .PHONY : base/util.cc.i
 
 base/util.s: base/util.cc.s
@@ -230,7 +230,7 @@ base/util.s: base/util.cc.s
 
 # target to generate assembly for a file
 base/util.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/util.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/base/util.cc.s
 .PHONY : base/util.cc.s
 
 kvstore_src/command_handler.o: kvstore_src/command_handler.cc.o
@@ -238,7 +238,7 @@ kvstore_src/command_handler.o: kvstore_src/command_handler.cc.o
 
 # target to build an object file
 kvstore_src/command_handler.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.o
 .PHONY : kvstore_src/command_handler.cc.o
 
 kvstore_src/command_handler.i: kvstore_src/command_handler.cc.i
@@ -246,7 +246,7 @@ kvstore_src/command_handler.i: kvstore_src/command_handler.cc.i
 
 # target to preprocess a source file
 kvstore_src/command_handler.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.i
 .PHONY : kvstore_src/command_handler.cc.i
 
 kvstore_src/command_handler.s: kvstore_src/command_handler.cc.s
@@ -254,7 +254,7 @@ kvstore_src/command_handler.s: kvstore_src/command_handler.cc.s
 
 # target to generate assembly for a file
 kvstore_src/command_handler.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/command_handler.cc.s
 .PHONY : kvstore_src/command_handler.cc.s
 
 kvstore_src/proactor.o: kvstore_src/proactor.cc.o
@@ -262,7 +262,7 @@ kvstore_src/proactor.o: kvstore_src/proactor.cc.o
 
 # target to build an object file
 kvstore_src/proactor.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.o
 .PHONY : kvstore_src/proactor.cc.o
 
 kvstore_src/proactor.i: kvstore_src/proactor.cc.i
@@ -270,7 +270,7 @@ kvstore_src/proactor.i: kvstore_src/proactor.cc.i
 
 # target to preprocess a source file
 kvstore_src/proactor.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.i
 .PHONY : kvstore_src/proactor.cc.i
 
 kvstore_src/proactor.s: kvstore_src/proactor.cc.s
@@ -278,7 +278,7 @@ kvstore_src/proactor.s: kvstore_src/proactor.cc.s
 
 # target to generate assembly for a file
 kvstore_src/proactor.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/proactor.cc.s
 .PHONY : kvstore_src/proactor.cc.s
 
 kvstore_src/reactor.o: kvstore_src/reactor.cc.o
@@ -286,7 +286,7 @@ kvstore_src/reactor.o: kvstore_src/reactor.cc.o
 
 # target to build an object file
 kvstore_src/reactor.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/reactor.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/reactor.cc.o
 .PHONY : kvstore_src/reactor.cc.o
 
 kvstore_src/reactor.i: kvstore_src/reactor.cc.i
@@ -294,7 +294,7 @@ kvstore_src/reactor.i: kvstore_src/reactor.cc.i
 
 # target to preprocess a source file
 kvstore_src/reactor.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/reactor.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/reactor.cc.i
 .PHONY : kvstore_src/reactor.cc.i
 
 kvstore_src/reactor.s: kvstore_src/reactor.cc.s
@@ -302,7 +302,7 @@ kvstore_src/reactor.s: kvstore_src/reactor.cc.s
 
 # target to generate assembly for a file
 kvstore_src/reactor.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/reactor.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/kvstore_src/reactor.cc.s
 .PHONY : kvstore_src/reactor.cc.s
 
 main.o: main.cc.o
@@ -310,7 +310,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/main.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -318,7 +318,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/main.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -326,7 +326,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/main.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/main.cc.s
 .PHONY : main.cc.s
 
 mysql/db_pool.o: mysql/db_pool.cc.o
@@ -334,7 +334,7 @@ mysql/db_pool.o: mysql/db_pool.cc.o
 
 # target to build an object file
 mysql/db_pool.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.o
 .PHONY : mysql/db_pool.cc.o
 
 mysql/db_pool.i: mysql/db_pool.cc.i
@@ -342,7 +342,7 @@ mysql/db_pool.i: mysql/db_pool.cc.i
 
 # target to preprocess a source file
 mysql/db_pool.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.i
 .PHONY : mysql/db_pool.cc.i
 
 mysql/db_pool.s: mysql/db_pool.cc.s
@@ -350,7 +350,7 @@ mysql/db_pool.s: mysql/db_pool.cc.s
 
 # target to generate assembly for a file
 mysql/db_pool.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f kvs-server/CMakeFiles/kvstore.dir/build.make kvs-server/CMakeFiles/kvstore.dir/mysql/db_pool.cc.s
 .PHONY : mysql/db_pool.cc.s
 
 # Help Target
@@ -399,6 +399,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

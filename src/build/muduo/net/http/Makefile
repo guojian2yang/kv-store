@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guojian/share/kvstore/src
+CMAKE_SOURCE_DIR = /home/guojian/share/kv-store/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guojian/share/kvstore/src/build
+CMAKE_BINARY_DIR = /home/guojian/share/kv-store/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles /home/guojian/share/kvstore/src/build/muduo/net/http//CMakeFiles/progress.marks
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kvstore/src/build/CMakeFiles 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles /home/guojian/share/kv-store/src/build/muduo/net/http//CMakeFiles/progress.marks
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guojian/share/kv-store/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/clean
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 muduo/net/http/CMakeFiles/muduo_http.dir/rule:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/muduo_http.dir/rule
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/muduo_http.dir/rule
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ muduo_http: muduo/net/http/CMakeFiles/muduo_http.dir/rule
 
 # fast build rule for target.
 muduo_http/fast:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/build
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/build
 .PHONY : muduo_http/fast
 
 HttpContext.o: HttpContext.cc.o
@@ -190,7 +190,7 @@ HttpContext.o: HttpContext.cc.o
 
 # target to build an object file
 HttpContext.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.o
 .PHONY : HttpContext.cc.o
 
 HttpContext.i: HttpContext.cc.i
@@ -198,7 +198,7 @@ HttpContext.i: HttpContext.cc.i
 
 # target to preprocess a source file
 HttpContext.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.i
 .PHONY : HttpContext.cc.i
 
 HttpContext.s: HttpContext.cc.s
@@ -206,7 +206,7 @@ HttpContext.s: HttpContext.cc.s
 
 # target to generate assembly for a file
 HttpContext.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpContext.cc.s
 .PHONY : HttpContext.cc.s
 
 HttpServer.o: HttpServer.cc.o
@@ -214,7 +214,7 @@ HttpServer.o: HttpServer.cc.o
 
 # target to build an object file
 HttpServer.cc.o:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o
 .PHONY : HttpServer.cc.o
 
 HttpServer.i: HttpServer.cc.i
@@ -222,7 +222,7 @@ HttpServer.i: HttpServer.cc.i
 
 # target to preprocess a source file
 HttpServer.cc.i:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.i
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.i
 .PHONY : HttpServer.cc.i
 
 HttpServer.s: HttpServer.cc.s
@@ -230,7 +230,7 @@ HttpServer.s: HttpServer.cc.s
 
 # target to generate assembly for a file
 HttpServer.cc.s:
-	cd /home/guojian/share/kvstore/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.s
+	cd /home/guojian/share/kv-store/src/build && $(MAKE) $(MAKESILENT) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.s
 .PHONY : HttpServer.cc.s
 
 # Help Target
@@ -264,6 +264,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/guojian/share/kvstore/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/guojian/share/kv-store/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

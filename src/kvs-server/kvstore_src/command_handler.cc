@@ -23,6 +23,7 @@ int handleCommand(const std::string& command, std::string& response) {
         return -1;
     }
 
+
     KVStore& kv = KVStore::getInstance();  // 获取单例 KVStore
     const std::string& cmd = tokens[0];
 
@@ -31,6 +32,7 @@ int handleCommand(const std::string& command, std::string& response) {
             response = "ERROR: 格式错误(set <key> <value> [ttl_seconds])";
             return -1;
         }
+        cout << "key: " << tokens[1] << " value: " << tokens[2] << endl;
         std::string key = tokens[1];
         std::string value = tokens[2];
         std::chrono::seconds ttl = std::chrono::seconds(0);  // 默认无过期时间
@@ -44,6 +46,7 @@ int handleCommand(const std::string& command, std::string& response) {
         }
         // 调用带结果反馈的 set 方法
         SetResult res = kv.set(key, value, ttl);
+        cout << "set res: " << res.overwritten << " " << res.evicted << endl;
         // 构造包含操作结果的响应
         response = "OK";
         if (res.overwritten) response += " (覆盖旧键)";

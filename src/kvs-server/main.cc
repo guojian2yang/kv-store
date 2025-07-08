@@ -16,8 +16,8 @@ using namespace muduo;
 using namespace muduo::net;
 using namespace std;
 
-#define reactor 0
-#define proactor 1
+#define reactor 1
+#define proactor 0
 
 // 定时持久化任务
 void startPeriodicPersistence(std::chrono::seconds interval, const std::string& filename) {
@@ -64,11 +64,11 @@ int main(int argc, char *argv[])
     // 启动定时清理过期 key 的任务
     KVStore::getInstance().startExpirationCleaner(std::chrono::minutes(1));
     // 从文件加载持久化数据
-    std::thread([](){
-        LOG_INFO << "Starting async data loading...";
-        KVStore::getInstance().loadFromFile("kv_store_data.txt");
-        LOG_INFO << "Data loading completed";
-    }).detach();
+    // std::thread([](){
+    //     LOG_INFO << "Starting async data loading...";
+    //     KVStore::getInstance().loadFromFile("kv_store_data.txt");
+    //     LOG_INFO << "Data loading completed";
+    // }).detach();
     // 启动定时持久化任务
     startPeriodicPersistence(std::chrono::seconds(60), "kv_store_data.txt");
 
