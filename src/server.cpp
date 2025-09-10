@@ -1,7 +1,3 @@
-/**
- * 创建者：程序员老廖
- * 日期：2025年8月12日
- */
 
 #include "mini_redis/server.hpp"
 
